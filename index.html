@@ -1,56 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="cs">
 <head>
-  <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje první stránka</title>
+
+    <!-- Import hezkého písma -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- 
+      STYLY PRO TAGY
+      Toto je místo, kde jsou definované barvy a vzhled.
+      Není potřeba to měnit, vše funguje automaticky!
     -->
+    <style>
+        /* Celkové nastavení stránky */
+        body {
+            font-family: 'Inter', sans-serif; /* Hezké písmo */
+            background-color: #FFF0F5; /* Jemně růžové pozadí */
+            color: #333; /* Tmavě šedá barva textu pro dobrou čitelnost */
+            line-height: 1.6; /* Větší mezery mezi řádky */
+            margin: 0;
+            padding: 20px;
+        }
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="https://glitch.com/favicon.ico" />
+        /* Hlavní "karta" uprostřed stránky, kde bude obsah */
+        main {
+            max-width: 800px; /* Maximální šířka obsahu */
+            margin: 20px auto; /* Vycentrování na stránce */
+            background-color: white; /* Bílý podklad pro obsah */
+            padding: 30px 40px; /* Vnitřní odsazení */
+            border-radius: 12px; /* Zábavné kulaté rohy */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Jemný stín */
+        }
 
-  <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-  <title>Hello World!</title>
+        /* Styly pro jednotlivé HTML tagy 
+        */
 
-  <!-- The website stylesheet -->
-  <link rel="stylesheet" href="/style.css" />
+        /* Hlavní nadpis (největší) */
+        h1 {
+            color: #8A2BE2; /* Fialová */
+            font-size: 2.5em; /* Velikost písma */
+            border-bottom: 3px solid #E6E6FA; /* Světle fialové podtržení */
+            padding-bottom: 10px;
+        }
 
-  <!-- The website JavaScript file -->
-  <script src="/script.js" defer></script>
+        /* Nadpis druhé úrovně (menší) */
+        h2 {
+            color: #FF69B4; /* Zářivě růžová */
+            font-size: 1.8em;
+            margin-top: 40px; /* Větší mezera nad ním */
+        }
+
+        /* Nadpis třetí úrovně (ještě menší) */
+        h3 {
+            color: #4682B4; /* Ocelově modrá */
+            font-size: 1.4em;
+        }
+
+        /* Běžný odstavec textu */
+        p {
+            font-size: 1.1em; /* Trochu větší písmo pro snadné čtení */
+            margin-bottom: 15px; /* Mezera pod odstavcem */
+        }
+
+        /* Seznamy (jak odrážkové, tak číslované) */
+        ul, ol {
+            padding-left: 30px; /* Odsazení seznamu */
+        }
+
+        /* Položka seznamu */
+        li {
+            margin-bottom: 8px; /* Mezera mezi položkami */
+            font-size: 1.1em;
+        }
+
+        /* Obrázky */
+        img {
+            max-width: 100%; /* Obrázek se vždy vejde, nikdy nebude moc široký */
+            height: auto;
+            border-radius: 8px; /* Kulaté rohy u obrázků */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Jemný stín pod obrázkem */
+            display: block; /* Umožní obrázek vycentrovat */
+            margin: 20px auto; /* Mezery okolo a vycentrování */
+        }
+
+        /* Odkazy */
+        a {
+            color: #007BFF; /* Světle modrá */
+            text-decoration: none; /* Bez podtržení */
+            font-weight: bold; /* Tučně */
+        }
+
+        /* Co se stane, když na odkaz najedeš myší */
+        a:hover {
+            text-decoration: underline; /* Při najetí myší se podtrhne */
+            color: #0056b3; /* Tmavší modrá */
+        }
+
+        /* Horizontální čára (oddělovač) */
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: #FFC0CB; /* Růžová */
+            margin: 30px 0; /* Mezery nad a pod čárou */
+        }
+
+        /* Citace nebo poznámka */
+        blockquote {
+            border-left: 5px solid #FFC0CB; /* Růžový pruh vlevo */
+            margin-left: 0;
+            padding-left: 15px;
+            font-style: italic; /* Kurzíva */
+            color: #555; /* Trochu světlejší text */
+        }
+
+    </style>
 </head>
-
 <body>
-  <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
-  <div class="wrapper">
-    <div class="content" role="main">
-      <h1 class="title">Oh hi website!</h1>
-      <img src="/cool-website.svg" class="illustration" alt="cool website" />
-      <div class="instructions">
+
+    <!-- Toto je hlavní kontejner pro tvůj obsah -->
+    <main>
+
+        <!-- 
+          HTML HŘIŠTĚ PRO DCERU
+          Ahoj! Sem můžeš začít psát svůj vlastní HTML kód.
+          Cokoliv napíšeš mezi značky <body> a </body> se zobrazí na stránce.
+          Už jsem ti sem připravil pár příkladů, které můžeš smazat nebo upravit.
+        -->
+
+        <!-- Začni psát ZDE -->
+
+        <h1>Ahoj! Vítej na mé stránce!</h1>
+
         <p>
-          Fork <a href="https://github.com/glitchdotcom/website-to-compute">this project</a> and open it in a GitHub Codespace.
-        </p>
-        <p> Follow the steps in the README to deploy your new website to Fastly in a few steps!
+            Jmenuji se <strong>[Sem napiš své jméno]</strong> a tohle je moje úplně první webová stránka.
+            Učím se HTML a je to zábava. Toto je běžný odstavec textu, napsaný pomocí tagu <code>&lt;p&gt;</code>.
         </p>
 
-      </div>
+        <p>
+            Text může být <strong>tučný (strong)</strong> nebo <em>šikmý (em - emphasis)</em>.
+        </p>
 
-      <footer class="footer">
-        <div>
-          <a class="remix" href="https://github.com/glitchdotcom/website-to-compute">🚧 Get your own site</a>
-        </div>
-      </footer>
-    </div>
-  </div>
+        <h2>Co mě baví</h2>
+        <p>Tohle je nadpis druhé úrovně (h2). Je menší než h1.</p>
+        
+        <!-- Toto je seznam s odrážkami (unordered list) -->
+        <ul>
+            <li>Malování</li>
+            <li>Tanec</li>
+            <li>Moje kočka Micka</li>
+            <li>Hraní her</li>
+        </ul>
+
+        <h2>Můj denní plán</h2>
+        <p>Toto je číslovaný seznam (ordered list):</p>
+        
+        <ol>
+            <li>Vstát</li>
+            <li>Škola</li>
+            <li>Domácí úkoly</li>
+            <li>Večeře</li>
+            <li>Jít spát</li>
+        </ol>
+
+        <!-- Oddělovací čára -->
+        <hr>
+
+        <h2>Obrázek pro radost</h2>
+        <p>Sem můžeš vložit obrázek z internetu pomocí tagu <code>&lt;img&gt;</code>. Stačí najít adresu obrázku (pravé tlačítko -> Kopírovat adresu obrázku).</p>
+        
+        <img src="https://placehold.co/600x300/FFC0CB/333?text=Hezký+obrázek" alt="Ukázkový obrázek">
+
+        <h2>Můj oblíbený citát</h2>
+        
+        <!-- Toto je blok s citací -->
+        <blockquote>
+            Žij každý den tak, jako by byl tvůj poslední.
+        </blockquote>
+
+        <h2>Kam se podívat dál?</h2>
+        <p>
+            Můžeš vytvořit odkaz na jinou stránku, třeba na 
+            <a href="https://www.google.com" target="_blank">Google</a>.
+            (target="_blank" znamená, že se otevře v novém okně).
+        </p>
+
+        <!-- Konec místa pro psaní -->
+
+    </main>
+
 </body>
-
 </html>
